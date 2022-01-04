@@ -1,0 +1,166 @@
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --neutral-very-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+  --annual-plan_bg: hsl(224, 100%, 96%);
+  --hover-btn: hsl(245, 98%, 67%);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: var(--primary-pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order_component {
+  background-color: var(--neutral-very-pale-blue);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 420px;
+  box-shadow: 0px 12px 30px 0px rgba(56, 41, 224, 0.2);
+}
+
+.order_illustration {
+  width: 100%;
+  display: block;
+}
+
+.inner_order_component {
+  padding: 2.3rem 2.3rem;
+  width: 100%;
+  display: block;
+}
+
+.order_component h1 {
+  text-align: center;
+  color: var(--neutral-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.order_description {
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+  color: var(--neutral-desaturated-blue);
+  line-height: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.annual_plan_container {
+  width: 100%;
+  background-color: var(--annual-plan_bg);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.change_btn {
+  color: var(--primary-bright-blue);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.change_btn:hover {
+  color: var(--hover-btn);
+  text-decoration: none;
+}
+
+.left_annual_plan {
+  display: flex;
+}
+
+.left_annual_plan img {
+  margin-right: 1rem;
+}
+
+.inner_annual_plan_container h2 {
+  color: var(--neutral-dark-blue);
+}
+
+.inner_annual_plan_container p {
+  color: var(--neutral-desaturated-blue);
+}
+
+.proceed_btn {
+  border: none;
+  width: 100%;
+  background-color: var(--primary-bright-blue);
+  color: var(--neutral-very-pale-blue);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px 0px rgba(56, 41, 224, 0.2);
+}
+
+.proceed_btn:hover {
+  background-color: var(--hover-btn);
+}
+
+.cancel_btn {
+  color: var(--neutral-desaturated-blue);
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.cancel_btn:hover {
+  color: var(--neutral-dark-blue);
+}
+
+/* FOOter */
+
+.attribution {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100vw;
+  background-color: var(--neutral-very-pale-blue);
+  font-size: 11px;
+  text-align: center;
+  padding: 0.5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  body {
+    background: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .order_component {
+    width: 90%;
+  }
+  .inner_order_component {
+    padding: 2rem 1.5rem;
+    width: 100%;
+  }
+}
